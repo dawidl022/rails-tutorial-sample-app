@@ -7,6 +7,7 @@ gem 'sass-rails', '6.0.0'
 gem 'webpacker',  '5.4.0'
 gem 'turbolinks', '5.2.1'
 gem 'jbuilder',   '2.10.0'
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'bootsnap',   '1.7.2', require: false
 
 group :development, :test do
