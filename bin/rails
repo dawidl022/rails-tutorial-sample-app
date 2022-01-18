@@ -5,7 +5,7 @@ if ENV['RAILS_ENV'] == 'test'
     enable_coverage :branch
     add_filter "/bin/"
     add_filter "/app/channels/"
-    add_filter /app\/(?:jobs|mailers)/
+    add_filter /app\/(?:jobs)/
   end
   puts "required simplecov"
 end
