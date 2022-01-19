@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   VALID_EMAIL_REGEX = /\A[^.](?:.*[^.])?@[0-9a-z](?:[0-9a-z-])*(?:\.[0-9a-z](?:[0-9a-z])*)*\Z/i
 
   before_save :downcase_email
